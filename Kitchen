@@ -1,0 +1,1708 @@
+type: custom:button-card
+entity: input_select.dashboardpages
+icon: null
+name: null
+show_state: true
+show_name: false
+show_icon: false
+style: |
+  ha-card{
+    border-radius: 0%;
+    border: 0px;
+    background-color: transparent !important;
+styles:
+  custom_fields:
+    kuvakkeet:
+      - position: absolute
+      - left: 400px
+      - top: 0px
+      - width: px
+      - opacity: 100%
+    speaker:
+      - position: absolute
+      - left: 0px
+      - top: 0px
+      - width: px
+      - opacity: 100%
+    field3:
+      - position: absolute
+      - left: 0px
+      - top: 0px
+      - width: px
+      - opacity: 100%
+    field4:
+      - position: absolute
+      - left: 0px
+      - top: 0px
+      - width: px
+      - opacity: 100%
+    field5:
+      - position: absolute
+      - left: 0px
+      - top: 0px
+      - width: px
+      - opacity: 100%
+    field6:
+      - position: absolute
+      - left: 0px
+      - top: 0px
+      - width: px
+      - opacity: 100%
+  card:
+    - width: 400px
+    - height: 250px
+    - top: '-80px'
+    - background-color: transparent
+    - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.0)
+  grid:
+    - grid-template-areas: '"i" "n" "s"'
+    - grid-template-columns: 1fr
+    - grid-template-rows: 1fr min-content min-content
+  img_cell:
+    - align_self: start
+    - text_align: start
+  name:
+    - justify-self: null
+    - padding-left: 0px
+    - font-weight: bold
+    - text-transform: lovercase
+    - align-self: null
+    - padding-bottom: null
+    - font-size: 15.5px
+  state:
+    - justify-self: null
+    - padding-left: 0px
+    - font-weight: null
+    - text-transform: lovercase
+    - align-self: null
+    - padding-bottom: null
+    - font-size: 14px
+    - color: '#b3b3b3'
+    - opacity: 0%
+  color_type: card
+  layout: icon_name_state2nd
+  show_name: true
+  show_label: false
+  label: null
+state:
+  - value: Weather
+    styles:
+      card:
+        - opacity: 0%
+        - height: 0px
+  - value: Bussi
+    styles:
+      card:
+        - opacity: 0%
+        - height: 0px
+custom_fields:
+  field6:
+    card:
+      type: custom:button-card
+      show_icon: false
+      entity: input_select.kitchen
+      show_state: false
+      show_name: false
+      show_entity_picture: false
+      style: |
+        ha-card{
+          width: 400px;
+          height: 250px;
+          border-radius: 0%;
+          border: 0px;
+          background-color: transparent !important;
+      styles:
+        custom_fields:
+          huoneet:
+            - position: absolute
+            - left: 10px
+            - top: 10px
+            - width: 60px
+            - opacity: 75%
+          plant1:
+            - position: absolute
+            - left: 10px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant2:
+            - position: absolute
+            - left: 100px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant3:
+            - position: absolute
+            - left: 200px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant4:
+            - position: absolute
+            - left: 300px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant5:
+            - position: absolute
+            - left: 300px
+            - top: 160px
+            - width: 60px
+            - opacity: 75%
+          plant6:
+            - position: absolute
+            - left: 200px
+            - top: 160px
+            - width: 60px
+            - opacity: 75%
+        grid:
+          - grid-template-areas: '"i" "n" "s"'
+          - grid-template-columns: 1fr
+          - grid-template-rows: 1fr min-content min-content
+        card:
+          - background-color: null
+          - background-size: 100%
+          - border-radius: 10px
+          - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)
+          - height: 250px
+          - width: 400px
+        img_cell:
+          - padding-top: 75px
+        icon:
+          - width: 50px
+          - padding-bottom: 50px
+        name:
+          - color: var(--secondary-text-color)
+          - padding-bottom: 0px
+          - null
+        state:
+          - font-size: 20px
+          - padding-bottom: 2px
+          - line-height: 20px
+          - color: white
+      state:
+        - value: Room
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Speaker
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Plants
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Lights
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Blinds
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+      custom_fields:
+        huoneet:
+          card:
+            type: custom:button-card
+            entity: input_select.kitchen
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Room
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant1:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:stove
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 60px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant2:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:stove
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 60px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant3:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:fridge
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 60px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant4:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:coffee-maker
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 60px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant5:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:dishwasher
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 60px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant6:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:fridge
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 60px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+  field5:
+    card:
+      type: custom:button-card
+      show_icon: false
+      entity: input_select.kitchen
+      show_state: false
+      show_name: false
+      show_entity_picture: false
+      style: |
+        ha-card{
+          width: 400px;
+          height: 250px;
+          border-radius: 0%;
+          border: 0px;
+          background-color: transparent !important;
+      styles:
+        custom_fields:
+          huoneet:
+            - position: absolute
+            - left: 10px
+            - top: 10px
+            - width: 60px
+            - opacity: 75%
+          plant1:
+            - position: absolute
+            - left: 10px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant2:
+            - position: absolute
+            - left: 100px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant3:
+            - position: absolute
+            - left: 200px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant4:
+            - position: absolute
+            - left: 300px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant5:
+            - position: absolute
+            - left: 300px
+            - top: 160px
+            - width: 60px
+            - opacity: 75%
+          plant6:
+            - position: absolute
+            - left: 200px
+            - top: 160px
+            - width: 60px
+            - opacity: 75%
+        grid:
+          - grid-template-areas: '"i" "n" "s"'
+          - grid-template-columns: 1fr
+          - grid-template-rows: 1fr min-content min-content
+        card:
+          - background-color: null
+          - background-size: 100%
+          - border-radius: 10px
+          - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)
+          - height: 250px
+          - width: 400px
+        img_cell:
+          - padding-top: 75px
+        icon:
+          - width: 50px
+          - padding-bottom: 50px
+        name:
+          - color: var(--secondary-text-color)
+          - padding-bottom: 0px
+          - null
+        state:
+          - font-size: 20px
+          - padding-bottom: 2px
+          - line-height: 20px
+          - color: white
+      state:
+        - value: Room
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Speaker
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Plants
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Appliances
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Blinds
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+      custom_fields:
+        huoneet:
+          card:
+            type: custom:button-card
+            entity: input_select.kitchen
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Room
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant1:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:stove
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 60px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+  field4:
+    card:
+      type: custom:button-card
+      show_icon: false
+      entity: input_select.kitchen
+      show_state: false
+      show_name: false
+      show_entity_picture: false
+      style: |
+        ha-card{
+          width: 400px;
+          height: 250px;
+          border-radius: 0%;
+          border: 0px;
+          background-color: transparent !important;
+      styles:
+        custom_fields:
+          huoneet:
+            - position: absolute
+            - left: 10px
+            - top: 10px
+            - width: 60px
+            - opacity: 75%
+          plant1:
+            - position: absolute
+            - left: 80px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant2:
+            - position: absolute
+            - left: 240px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+        grid:
+          - grid-template-areas: '"i" "n" "s"'
+          - grid-template-columns: 1fr
+          - grid-template-rows: 1fr min-content min-content
+        card:
+          - background-color: null
+          - background-size: 100%
+          - border-radius: 10px
+          - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)
+          - height: 250px
+          - width: 400px
+        img_cell:
+          - padding-top: 75px
+        icon:
+          - width: 50px
+          - padding-bottom: 50px
+        name:
+          - color: var(--secondary-text-color)
+          - padding-bottom: 0px
+          - null
+        state:
+          - font-size: 20px
+          - padding-bottom: 2px
+          - line-height: 20px
+          - color: white
+      state:
+        - value: Room
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Speaker
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Appliances
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Lights
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Blinds
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+      custom_fields:
+        huoneet:
+          card:
+            type: custom:button-card
+            entity: input_select.kitchen
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Room
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant1:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant2:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+  field3:
+    card:
+      type: custom:button-card
+      show_icon: false
+      entity: input_select.kitchen
+      show_state: false
+      show_name: false
+      show_entity_picture: false
+      style: |
+        ha-card{
+          width: 400px;
+          height: 250px;
+          border-radius: 0%;
+          border: 0px;
+          background-color: transparent !important;
+      styles:
+        custom_fields:
+          huoneet:
+            - position: absolute
+            - left: 10px
+            - top: 10px
+            - width: 60px
+            - opacity: 75%
+          plant1:
+            - position: absolute
+            - left: 80px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+          plant2:
+            - position: absolute
+            - left: 240px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+        grid:
+          - grid-template-areas: '"i" "n" "s"'
+          - grid-template-columns: 1fr
+          - grid-template-rows: 1fr min-content min-content
+        card:
+          - background-color: null
+          - background-size: 100%
+          - border-radius: 10px
+          - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)
+          - height: 250px
+          - width: 400px
+        img_cell:
+          - padding-top: 75px
+        icon:
+          - width: 50px
+          - padding-bottom: 50px
+        name:
+          - color: var(--secondary-text-color)
+          - padding-bottom: 0px
+          - null
+        state:
+          - font-size: 20px
+          - padding-bottom: 2px
+          - line-height: 20px
+          - color: white
+      state:
+        - value: Room
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Speaker
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Plants
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Lights
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Appliances
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+      custom_fields:
+        huoneet:
+          card:
+            type: custom:button-card
+            entity: input_select.kitchen
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Room
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant1:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        plant2:
+          card:
+            type: custom:button-card
+            entity: input_boolean.antti
+            tap_action:
+              action: call-service
+              service: script.toggle_boolean
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 80px
+                - height: 80px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+  speaker:
+    card:
+      type: custom:button-card
+      show_icon: false
+      entity: input_select.kitchen
+      show_state: false
+      show_name: false
+      show_entity_picture: false
+      style: |
+        ha-card{
+          width: 400px;
+          height: 250px;
+          border-radius: 0%;
+          border: 0px;
+          background-color: transparent !important;
+      styles:
+        custom_fields:
+          huoneet:
+            - position: absolute
+            - left: 10px
+            - top: 10px
+            - width: 60px
+            - opacity: 75%
+          plant1:
+            - position: absolute
+            - left: 0px
+            - top: 0px
+            - width: 0px
+            - opacity: 100%
+        grid:
+          - grid-template-areas: '"i" "n" "s"'
+          - grid-template-columns: 1fr
+          - grid-template-rows: 1fr min-content min-content
+        card:
+          - background-color: null
+          - background-size: 100%
+          - border-radius: 10px
+          - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)
+          - height: 250px
+          - width: 400px
+        img_cell:
+          - padding-top: 75px
+        icon:
+          - width: 50px
+          - padding-bottom: 50px
+        name:
+          - color: var(--secondary-text-color)
+          - padding-bottom: 0px
+          - null
+        state:
+          - font-size: 20px
+          - padding-bottom: 2px
+          - line-height: 20px
+          - color: white
+      state:
+        - value: Room
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Appliances
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Plants
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Lights
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+        - value: Blinds
+          styles:
+            card:
+              - width: 400px
+              - height: 0px
+              - opacity: 0%
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+      custom_fields:
+        plant1:
+          card:
+            type: custom:mini-media-player
+            entity: media_player.olohuone_tv
+            artwork: cover
+            style: |
+              ha-card{
+                width: 400px;
+                height: 250px;
+                border-radius: 0%;
+                border: 0px;
+                background-color: transparent !important;
+        huoneet:
+          card:
+            type: custom:button-card
+            entity: input_select.kitchen
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Room
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:home
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+  kuvakkeet:
+    card:
+      type: custom:button-card
+      show_icon: false
+      entity: input_select.kitchen
+      show_state: false
+      show_name: false
+      style: |
+        ha-card{
+          width: 400px;
+          height: 250px;
+          border-radius: 0%;
+          border: 0px;
+          background-color: transparent !important;
+      styles:
+        custom_fields:
+          graph:
+            - position: absolute
+            - left: 10px
+            - top: 210px
+            - width: 60px
+            - opacity: 75%
+          topleft:
+            - position: absolute
+            - left: 15px
+            - top: 15px
+          speaker:
+            - position: absolute
+            - left: 325px
+            - top: 10px
+            - width: 60px
+            - opacity: 75%
+          huoneet:
+            - position: absolute
+            - left: 10px
+            - top: 10px
+            - width: 60px
+            - opacity: 75%
+          room_name:
+            - position: absolute
+            - left: 150px
+            - top: 10px
+            - width: px
+            - opacity: 75%
+          appliances:
+            - position: absolute
+            - left: 325px
+            - top: 150px
+            - width: 60px
+            - opacity: 75%
+          blinds:
+            - position: absolute
+            - left: 325px
+            - top: 115px
+            - width: 60px
+            - opacity: 75%
+          temperaturehumidity:
+            - position: absolute
+            - left: 150px
+            - top: 210px
+            - width: 100px
+            - opacity: 75%
+          light:
+            - position: absolute
+            - left: 325px
+            - top: 45px
+            - width: 60px
+            - opacity: 75%
+          plants:
+            - position: absolute
+            - left: 325px
+            - top: 80px
+            - width: 60px
+            - opacity: 75%
+        grid:
+          - grid-template-areas: '"i" "n" "s"'
+          - grid-template-columns: 1fr
+          - grid-template-rows: 1fr min-content min-content
+        card:
+          - background: url('/local/dashboard_images/keittio.jpg')
+          - background-size: 100%
+          - border-radius: 10px
+          - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)
+          - height: 250px
+          - width: 400px
+        img_cell:
+          - padding-top: 75px
+        icon:
+          - width: 50px
+          - padding-bottom: 50px
+        name:
+          - color: var(--secondary-text-color)
+          - padding-bottom: 0px
+        state:
+          - font-size: 20px
+          - padding-bottom: 2px
+          - line-height: 20px
+          - color: white
+      state:
+        - value: Room
+          styles:
+            card:
+              - animation:
+                  - mymove 0.5s linear
+              - animation-fill-mode: forwards
+        - value: Blinds
+          styles:
+            card:
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+              - animation:
+                  - moving 0.5s linear
+              - animation-direction: reverse
+        - value: Speaker
+          styles:
+            card:
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+              - animation:
+                  - moving 0.5s linear
+              - animation-direction: reverse
+        - value: Lights
+          styles:
+            card:
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+              - animation:
+                  - moving 0.5s linear
+              - animation-direction: reverse
+        - value: Plants
+          styles:
+            card:
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+              - animation:
+                  - moving 0.5s linear
+              - animation-direction: reverse
+        - value: Appliances
+          styles:
+            card:
+              - border-radius: 0px
+              - box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)
+              - animation:
+                  - moving 0.5s linear
+              - animation-direction: reverse
+      extra_styles: |
+        @keyframes mymove {
+        0% { transform: translate(0px) ; }
+        10% { transform: translate(-40px) ; }
+        20% { transform: translate(-80px) ; }
+        30% { transform: translate(-120px) ; }
+        40% { transform: translate(-160px) ; }
+        50% { transform: translate(-220px) ; }
+        60% { transform: translate(-260px) ; }
+        70% { transform: translate(-300px) ; }
+        80% { transform: translate(-340px) ; }
+        90% { transform: translate(-380px) ; }
+        100% { transform: translate(-400px) ; }
+        }
+
+        @keyframes moving {
+        0% { transform: translate(0px) ; }
+        10% { transform: translate(-40px) ; }
+        20% { transform: translate(-80px) ; }
+        30% { transform: translate(-120px) ; }
+        40% { transform: translate(-160px) ; }
+        50% { transform: translate(-220px) ; }
+        60% { transform: translate(-260px) ; }
+        70% { transform: translate(-300px) ; }
+        80% { transform: translate(-340px) ; }
+        90% { transform: translate(-380px) ; }
+        100% { transform: translate(-400px) ; }
+        }
+      custom_fields:
+        speaker:
+          card:
+            type: custom:button-card
+            entity: media_player.olohuone_tv
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Speaker
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            icon: mdi:speaker
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+            extra_styles: |
+
+              @keyframes pulse{
+                0%  {color:#edd346; 
+                      transform: translate(0px, 0px) rotate(-5deg) scale(1.08);
+                      }
+                10%  {color:#ebcf32;
+                       transform: translate(0px, 0px) scale(1);
+                      }
+                20%  {color:#ffbe46;
+                        transform: translate(0px, 0px) scale(1.08);
+                       }
+                30% {color:#ffb62f9; 
+                      transform: translate(0px, 0px) rotate(5deg) scale(1.08);
+                      }
+                40% {color:#efc426; transform: translate(0px, 0px) scale(1.08);
+                      }
+                50% {color:#ffae19; 
+                      transform: translate(0px, 0px) rotate(-5deg) scale(1.08);
+                       }
+                60% {color:#ffb62f9; 
+                      transform: translate(0px, 0px) scale(1.08);
+                      }
+                70%  {color:#ffbe46; 
+                      transform: translate(0px, 0px) scale(1);
+                       }
+                80%  {color:#ebcf32; 
+                      transform: translate(0px, 0px) rotate(5deg) scale(1);
+                       }
+                90% {color:#edd346;
+                      transform: translate(0px, 0px) scale(1);
+                      }
+                100% {color:#efd85a; 
+                      transform: translate(0px, 0px) rotate(-5deg) scale(1.08);
+                      }
+              }
+              @keyframes pulse1 {
+                0%   { transform: translate(0px, 0px) scale(1.08);
+                      }
+                10%  { transform: translate(0px, 0px) scale(1);
+                      }
+                20%  {transform: translate(0px, 0px) scale(1.08);
+                       }
+                30%  {transform: translate(0px, 0px) scale(1);
+                       }
+                40% { transform: translate(0px, 0px) scale(1.08);
+                      }
+                50% {transform: translate(0px, 0px) scale(1);
+                      }
+                60% {transform: translate(0px, 0px) scale(1.08);
+                      }
+                70%  {transform: translate(0px, 0px) scale(1);
+                       }
+                80%  {transform: translate(0px, 0px) scale(1.08);
+                       }
+                90% {transform: translate(0px, 0px) scale(1);
+                      }
+                100% {transform: translate(0px, 0px) scale(1.08);
+                      }
+            state:
+              - value: paused
+                styles:
+                  icon:
+                    - filter: grayscale(100%)
+                    - opacity: 60%
+              - value: playing
+                styles:
+                  icon:
+                    - animation: pulse 4.0s infinite
+                    - opacity: 100%
+                  card:
+                    - background-color: null
+                    - animation: pulse1 3.0s infinite
+                    - opacity: 100%
+        huoneet:
+          card:
+            type: custom:button-card
+            entity: input_boolean.entity2 (or something else)
+            tap_action:
+              action: toggle
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:walk
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+        temperaturehumidity:
+          card:
+            type: custom:swipe-card
+            parameters:
+              centeredSlides: true
+              allowTouchMove: true
+              loop: false
+              spaceBetween: 8
+              slidesPerView: auto
+              pagination:
+                type: false
+              effect: fade
+              fadeEffect:
+                crossFade: true
+              autoplay:
+                disableOnInteraction: false
+                delay: 10000
+              speed: 2000
+            cards:
+              - type: horizontal-stack
+                cards:
+                  - type: custom:button-card
+                    entity: sensor.temperature_sensor_8_keittio_temperature
+                    entity_picture: null
+                    show_entity_picture: false
+                    show_state: true
+                    show_name: false
+                    show_label: false
+                    show_icon: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      service_data:
+                        entity_id: input_select.puhelinnakyma
+                        option: Eteinen
+                    style: >
+                      ha-card {background: ; border-style: none; border: 0px;
+                      box-shadow: none;}
+                    styles:
+                      grid:
+                        - grid-template-areas: '"i" "n" "s"'
+                        - grid-template-columns: 1fr
+                        - grid-template-rows: 1fr min-content min-content
+                      icon:
+                        - width: 20px
+                      state:
+                        - justify-self: center
+                        - padding-right: px
+                        - font-weight: null
+                        - text-transform: lovercase
+                        - align-self: center
+                        - padding-bottom: null
+                        - font-size: 14px
+                        - color: null
+                      card:
+                        - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0)
+              - type: horizontal-stack
+                cards:
+                  - type: custom:button-card
+                    entity: sensor.temperature_sensor_8_keittio_humidity
+                    entity_picture: null
+                    show_entity_picture: false
+                    show_state: true
+                    show_name: false
+                    show_label: false
+                    show_icon: false
+                    tap_action:
+                      action: call-service
+                      service: input_select.select_option
+                      service_data:
+                        entity_id: input_select.puhelinnakyma
+                        option: Eteinen
+                    style: >
+                      ha-card {background: ; border-style: none; border: 0px;
+                      box-shadow: none;}
+                    styles:
+                      grid:
+                        - grid-template-areas: '"i" "n" "s"'
+                        - grid-template-columns: 1fr
+                        - grid-template-rows: 1fr min-content min-content
+                      icon:
+                        - width: 20px
+                      state:
+                        - text-align: center
+                        - padding-right: px
+                        - font-weight: null
+                        - text-transform: lovercase
+                        - padding-bottom: null
+                        - font-size: 14px
+                        - color: null
+                      card:
+                        - box-shadow: 5px 5px 20px rgba(0, 0, 0, 0)
+        light:
+          card:
+            type: custom:button-card
+            entity: light.dashboardlivingroom
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Lights
+                entity_id: input_select.kitchen
+            double_tap_action:
+              action: toggle
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:lightbulb
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 10px
+                - justify-self: null
+                - padding-right: 2px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: right
+                - padding-bottom: null
+            state:
+              - value: 'on'
+                styles:
+                  icon:
+                    - opacity: 100%
+                    - color: '#e6b400'
+        plants:
+          card:
+            type: custom:button-card
+            entity: input_select.kitchen
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Plants
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:sprout
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 10px
+                - justify-self: null
+                - padding-right: 2px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: right
+                - padding-bottom: null
+        room_name:
+          card:
+            type: custom:button-card
+            entity: input_boolean.entity3 (or something else)
+            tap_action:
+              action: toggle
+            show_state: false
+            show_name: true
+            show_icon: false
+            name: Kitchen
+            icon: mdi:bus
+            styles:
+              grid:
+                - grid-template-areas: '"i" "n" "s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 100px
+                - height: 30px
+              name:
+                - text-align: center
+                - font-weight: null
+                - text-transform: lovercase
+                - padding-bottom: null
+        appliances:
+          card:
+            type: custom:button-card
+            entity: media_player.dashboardlivingroom
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Appliances
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:television
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
+            state:
+              - value: 'on'
+                styles:
+                  icon:
+                    - opacity: 100%
+                    - color: '#e6b400'
+        blinds:
+          card:
+            type: custom:button-card
+            entity: input_select.kitchen
+            tap_action:
+              action: call-service
+              service: input_select.select_option
+              service_data:
+                option: Blinds
+                entity_id: input_select.kitchen
+            show_state: false
+            show_name: false
+            show_icon: true
+            icon: mdi:blinds
+            styles:
+              grid:
+                - grid-template-areas: '"i s s"'
+                - grid-template-columns: 1fr
+                - grid-template-rows: 1fr min-content min-content
+              icon:
+                - width: 25px
+              card:
+                - width: 60px
+                - height: 30px
+              state:
+                - font-size: 15px
+                - justify-self: null
+                - padding-right: 3px
+                - font-weight: null
+                - text-transform: lovercase
+                - align-self: null
+                - padding-bottom: null
